@@ -4,6 +4,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+ul{
+    list-style: none;
+}
 
 /*  Variables  */
 :root{
@@ -13,9 +16,22 @@
 .header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 20px 32px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
-.header__logo img{
-    width: 90px;
-    height: 32px;
+.header__logo{
+    order: 1;
+}
+
+.header__menu{
+    width: 24px;
+}
+
+.header__menu svg{
+    fill: var(--primary-color);
 }
