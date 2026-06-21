@@ -1,0 +1,21 @@
+/*  Reset style  */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*  Variables  */
+:root{
+    --primary-color: #21aa58;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo img{
+    width: 90px;
+    height: 32px;
+}
