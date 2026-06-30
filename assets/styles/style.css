@@ -4,17 +4,12 @@ padding: 0;
 margin: 0;
 box-sizing: border-box;
 }
-ul{
-list-style: none;
-}
 
-a{
-    text-decoration: none;
-}
 
 /* Variables */
 :root{
     --primary-color: #21aa58;
+    --black: #000;
     --size-xs: 376px;
     --size-sm: 578px;
     --size-md: 768px;
@@ -26,6 +21,21 @@ html,body{
     font-family: IRANSans, Arial, Helvetica, sans-serif;
 }
 
+ul{
+    list-style: none;
+    }
+    
+    a,
+    a:active,
+    a:link{
+        text-decoration: none;
+        color:inherit;
+        cursor: pointer;
+    }
+
+    .no-action{
+        pointer-events: none;
+    }
 .container{
     max-width: var(--size-lg);
 }
