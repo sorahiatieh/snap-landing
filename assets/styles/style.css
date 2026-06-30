@@ -45,6 +45,12 @@ a{
     align-items: center;
 }
 
+.header__logo a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (min-width:768px) {
     .header__logo{
         order: -1;
