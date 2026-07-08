@@ -108,6 +108,10 @@ fill: var(--primary-color);
         font-weight: 300;
     }
     .header__menu__nav__items__icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 24px;
+     cursor: pointer;
     }
 }
