@@ -149,7 +149,7 @@ ul{
         cursor: pointer;
     }
 
-    .header__menu__nav__items :hover .header__menu__nav__items__dropdown {
+    .header__menu__nav__items:hover  .header__menu__nav__items__dropdown {
         display: block;
     }
 
