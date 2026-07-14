@@ -92,7 +92,7 @@ ul{
 }
 
 .header__menu .header_menu_icon svg{
-fill: var(--primary-color);
+    fill: var(--primary-color);
 }
 
 .header__menu__nav{
