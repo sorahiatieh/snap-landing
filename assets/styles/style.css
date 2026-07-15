@@ -10,6 +10,8 @@ box-sizing: border-box;
 :root{
     --primary-color: #21aa58;
     --border-color: #f7f7f7;
+    --bg-white:#fff;
+    --bg-main-color: #eeefff;
     --black: #000;
     --size-xs: 376px;
     --size-sm: 578px;
@@ -43,20 +45,28 @@ ul{
 }
 
 .header{
-    display: flex;
-    gap: 28px;
-    justify-content: space-between;
-    align-items: center;
     padding: 20px 32px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    background-color: var(--bg-white);
+}
+
+.header_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 28px;
     margin: 0 auto;
 }
-@media (min-width:768px) {
+
+@media (min-width:992px) {
     .header{
         padding: 30px 0;
+    }
+
+    .header_container{
         justify-content: flex-start;
     }
 }
@@ -74,21 +84,29 @@ ul{
     align-items: center;
 }
 
-@media (min-width:768px) {
+@media (min-width:992px) {
     .header__logo{
         order: -1;
         }
 }
 
 .header_menu_icon{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 24px;
 }
 
-@media (min-width:768px) {
+@media (min-width:992px) {
     .header_menu_icon{
        display: none;
         }
+}
+
+.header__menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header__menu .header_menu_icon svg{
@@ -128,6 +146,7 @@ ul{
     }
 
     .header__menu__nav__items__dropdown{
+        background-color: var(--bg-white);
         border: 2px solid var(--border-color);
         border-radius: 10px;
         position: absolute;
@@ -167,12 +186,14 @@ ul{
 
 main{
     height: 100vh;
+    background-color: var(--bg-main-color);
 }
 
 footer{
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 32px 24px;
+    gap: 20px;
 }
 
 .footer__nav ul{
@@ -184,4 +205,30 @@ footer{
 
 .footer__nav ul li{
     cursor: pointer;
+}
+
+.footer__socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.footer__socials__icon{
+    width: 28px;
+    height: 28px;
+}
+
+.footer__trusts{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer__trusts__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
