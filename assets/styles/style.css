@@ -185,8 +185,20 @@ ul{
 }
 
 main{
-    height: 100vh;
     background-color: var(--bg-main-color);
+}
+
+.main__banner{
+    display: flex;
+    margin-top: 90px;
+}
+.main__banner_right{
+    background-color: var(--primary-color);
+    color: var(--bg-main-color);
+}
+
+.main__banner_left img{
+    width: 100%;
 }
 
 footer{
