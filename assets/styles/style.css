@@ -164,3 +164,24 @@ ul{
         opacity: 0;
     }
 }
+
+main{
+    height: 100vh;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.footer__nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer__nav ul li{
+    cursor: pointer;
+}
