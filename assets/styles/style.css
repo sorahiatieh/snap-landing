@@ -185,9 +185,20 @@ ul{
 }
 
 main{
-    background-color: var(--bg-main-color);
+   margin: 70px 0 0;
 }
 
+@media (min-width:992px) {
+    main{
+        margin: 90px 0 0;
+    }
+    
+}
+
+.hero{
+    display: flex;
+    height: 50vh;
+}
 .main__banner{
     display: flex;
     margin-top: 90px;
