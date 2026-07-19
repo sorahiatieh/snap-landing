@@ -3,6 +3,7 @@
 padding: 0;
 margin: 0;
 box-sizing: border-box;
+font-family:  IRANSans;
 }
 
 
@@ -19,7 +20,7 @@ box-sizing: border-box;
     --size-lg: 992px;
     --size-xl: 1200px;
 }
-
+ /* general css */
 html,body{
     font-family: IRANSans, Arial, Helvetica, sans-serif;
 }
@@ -36,14 +37,52 @@ ul{
         cursor: pointer;
     }
 
+    .container{
+        /* max-width: var(--size-xl); */
+        max-width: 1318px;
+    }
+
     .no-action{
         pointer-events: none;
     }
-.container{
-    /* max-width: var(--size-xl); */
-    max-width: 1318px;
+
+.input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 10px 5px;
+    color: var(--border-color);
 }
 
+.input--outline{
+    border-bottom: 1px solid var(--border-color);
+}
+
+input::placeholder{
+    color: var(--bg-white);
+}
+
+.btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    width: 100%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.btn--primary{
+    background-color: var(--bg-white);
+    color: var(--primary-color);
+}
+
+/* header */
 .header{
     padding: 20px 32px;
     position: fixed;
@@ -241,7 +280,18 @@ main{
     }
 }
 
+.hero__info__form{
+    display: flex;
+    gap: 20px;
+}
 
+.hero__info__form input[type="tel"]{
+    flex:0.5;
+}
+
+.hero__info__form button{
+   flex-basis: 120px;
+}
 
 footer{
     display: flex;
