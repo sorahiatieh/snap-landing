@@ -197,20 +197,51 @@ main{
 
 .hero{
     display: flex;
-    height: 50vh;
-}
-.main__banner{
-    display: flex;
-    margin-top: 90px;
-}
-.main__banner_right{
-    background-color: var(--primary-color);
-    color: var(--bg-main-color);
+    height: 60vh;
 }
 
-.main__banner_left img{
-    width: 100%;
+.hero__info{
+   flex: 1;
+   height: 100%;
+   background-color: var(--primary-color);
+   color: var(--bg-main-color); 
+    padding-left: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
+.hero__info__inner{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero__image{
+   flex: 0;
+    height: 100%;
+}
+
+@media (min-width:992px) {
+    .hero__image{
+        flex: 1;
+        background: url("../images/intro.jpg") center center no-repeat;
+        background-size: cover;
+    }
+    .hero__info__inner{
+        margin-right: 150px;
+    }
+    .hero__info__inner h1{
+        font-size: 36px;
+        font-weight: 700;
+    }
+    .hero__info__inner p{
+        font-size: 20px;
+    }
+}
+
+
 
 footer{
     display: flex;
