@@ -13,6 +13,7 @@ font-family:  IRANSans;
     --border-color: #f7f7f7;
     --bg-white:#fff;
     --bg-main-color: #eeefff;
+    --ripple-color:#e7e7e758;
     --black: #000;
     --size-xs: 376px;
     --size-sm: 578px;
@@ -71,10 +72,64 @@ input::placeholder{
     font-size: 16px;
     font-weight: 300;
     width: 100%;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    opacity: 1;
+    transition: all ease 05s;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    -webkit-transition: all ease 05s;
+    -moz-transition: all ease 05s;
+    -ms-transition: all ease 05s;
+    -o-transition: all ease 05s;
+}
+
+.btn:hover{
+    opacity: 0.9;
+}
+
+.btn::after{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: -10;
+    transition: all ease 0.5s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(0);
+    -moz-transform: translate(-50%, -50%) scale(0);
+    -ms-transform: translate(-50%, -50%) scale(0);
+    -o-transform: translate(-50%, -50%) scale(0);
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+}
+
+.btn:active::after{
+    transform: translate(-50%,-50%) scale(6);
+    -webkit-transform: translate(-50%,-50%) scale(6);
+    -moz-transform: translate(-50%,-50%) scale(6);
+    -ms-transform: translate(-50%,-50%) scale(6);
+    -o-transform: translate(-50%,-50%) scale(6);
+}
+
+.btn:active{
+    transform: scale(0.97);
+    -webkit-transform: scale(0.97);
+    -moz-transform: scale(0.97);
+    -ms-transform: scale(0.97);
+    -o-transform: scale(0.97);
 }
 
 .btn--primary{
@@ -83,12 +138,20 @@ input::placeholder{
     font-weight: 500;
 }
 
+.btn--primary::after{
+    background-color: var(--ripple-color);
+}
+
 .btn--outline{
     border: 1px solid var(--border-color);
     color: var(--bg-white);
     font-weight: 500;
-    
 }
+
+.btn--outline::after{
+    background-color: var(--ripple-color);
+}
+
 /* header */
 .header{
     padding: 20px 32px;
