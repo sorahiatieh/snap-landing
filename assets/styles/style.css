@@ -77,6 +77,7 @@ input::placeholder{
     overflow: hidden;
     opacity: 1;
     transition: all ease 05s;
+    user-select: none;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
@@ -375,6 +376,43 @@ main{
 .hero__info__form button{
    flex-basis: 120px;
 }
+
+.appurls{
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    padding: 80px 0;
+}
+
+.appurls__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width:992px) {
+    .appurls{
+        flex-direction: row;
+    }
+}
+.appurls__item a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.appurls__item img{
+    display: block;
+    width: 200px;
+}
+
+
+
+
+
+
+
 
 footer{
     display: flex;
