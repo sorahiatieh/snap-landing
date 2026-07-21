@@ -16,8 +16,8 @@ ul{
     }
 
     .container{
-        /* max-width: var(--size-xl); */
-        max-width: 1318px;
+        max-width: var(--size-xl);
+        margin: 0 auto;
     }
 
     .no-action{

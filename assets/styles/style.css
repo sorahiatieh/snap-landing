@@ -279,8 +279,13 @@ main{
     width: 200px;
 }
 
-
-
+/* services */
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
 
 
 
