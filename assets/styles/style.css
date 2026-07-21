@@ -380,6 +380,8 @@ main{
 .appurls{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
     gap: 48px;
     padding: 80px 0;
 }
@@ -391,7 +393,7 @@ main{
     align-items: center;
 }
 
-@media (min-width:992px) {
+@media (min-width:578px) {
     .appurls{
         flex-direction: row;
     }
