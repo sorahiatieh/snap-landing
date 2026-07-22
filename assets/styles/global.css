@@ -132,6 +132,12 @@ input::placeholder{
 
 section h3{
     text-align: center;
-    font-size: 32px;
-    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+
+@media (min-width:578px) {
+    section h3{
+        font-size: 32px;
+    }
 }

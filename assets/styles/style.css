@@ -283,10 +283,53 @@ main{
 .services{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    
+    justify-content: space-around;
+    min-height: 50vh;
 }
 
+.services__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 29%;
+}
+@media (min-width:578px) {
+    .services__card{
+        flex-direction: row;
+        gap: 10px;
+    }
+}
+
+.services__card__pic{
+    display: flex;
+    width: 48px;
+    height: 48px;
+}
+
+.services__card__info h4, h5{
+    text-align: center;
+}
+
+.services__card__info h5{
+    display: none;
+}
+
+@media (min-width:578px) {
+    .services__card__info h5{
+        display: block;
+    }
+    .services__card__info h4{
+        text-align: right;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .services__card__info h5{
+        text-align: right;
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
 
 
 
