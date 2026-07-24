@@ -283,16 +283,17 @@ main{
 .services{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    min-height: 50vh;
+    justify-content: center;
 }
 
 .services__card{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+
     width: 29%;
+    max-width: 321px;
+    margin: 1rem;
 }
 @media (min-width:578px) {
     .services__card{
@@ -307,7 +308,8 @@ main{
     height: 62px;
 }
 
-.services__card__info h4, h5{
+.services__card__info h4, 
+.services__card__info h5{
     text-align: center;
 }
 
