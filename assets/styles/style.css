@@ -303,8 +303,8 @@ main{
 
 .services__card__pic{
     display: flex;
-    width: 48px;
-    height: 48px;
+    width: 62px;
+    height: 62px;
 }
 
 .services__card__info h4, h5{
