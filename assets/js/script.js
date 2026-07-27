@@ -11,4 +11,3 @@
             autoplayHoverPause: true
         });
     });
-
