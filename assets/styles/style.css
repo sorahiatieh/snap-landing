@@ -360,20 +360,22 @@ main{
 /* specifications */
 
 .specifications{
-    display: flex;
+    display: block;
 }
 
 .specifications__pic{
-   flex: 0.5;
+    display: flex;
+   flex: 1;
 }
 
 .specifications__pic img{
     width: 100%;
+    object-fit: cover;
 }
 
 .specifications__info{
-    flex: 0.5;
-    padding: 20px 50px;
+    flex: 1;
+    padding: 20px;
 }
 
 .specifications__info h2,
@@ -382,13 +384,33 @@ main{
 }
 
 .specifications__info h2{
-    font-size: 24px;
+    font-size: 18px;
     margin-bottom: 25px;
 }
 
 .specifications__info p{
     font-weight: 300;
-    padding-left: 90px;
+    padding-left: 0;
+}
+
+@media (min-width:578px) {
+    .specifications{
+        display: flex;
+    }
+    .specifications__pic{
+        flex: 0.5;
+     }
+     .specifications__info{
+        flex: 0.5;
+        padding: 20px 50px;
+    }
+    .specifications__info h2{
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+    .specifications__info p{
+        padding-left: 90px;
+    }
 }
 
 
