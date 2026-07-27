@@ -357,6 +357,50 @@ main{
     -o-border-radius: 10px;
 }
 
+/* specifications */
+
+.specifications{
+    display: flex;
+}
+
+.specifications__pic{
+   flex: 0.5;
+}
+
+.specifications__pic img{
+    width: 100%;
+}
+
+.specifications__info{
+    flex: 0.5;
+    padding: 20px 50px;
+}
+
+.specifications__info h2,
+.specifications__info p{
+    text-align: justify;
+}
+
+.specifications__info h2{
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.specifications__info p{
+    font-weight: 300;
+    padding-left: 90px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 footer{
     display: flex;
