@@ -14,6 +14,7 @@ font-family:  IRANSans;
     --bg-white:#fff;
     --bg-main-color: #eeefff;
     --ripple-color:#e7e7e758;
+    --bg-gray:#ebecf2;
     --black: #000;
     --size-xs: 376px;
     --size-sm: 578px;
@@ -411,6 +412,50 @@ main{
     .specifications__info p{
         padding-left: 90px;
     }
+}
+
+.specifications__hints{
+    display: flex;
+    padding: 15px;
+   flex-wrap: wrap;
+   gap: 15px;
+}
+
+.specifications__hints__box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+@media (min-width:578px){
+    .specifications__hints__box{
+        width: 30%;
+    }
+}
+
+.specifications__hints__box__avatar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-gray);
+    border-radius: 10px;
+    padding: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.specifications__hints__box__headline{
+    font-size: 18px;
+    text-align: right;
+}
+
+.specifications__hints__box__subline{
+    font-size: 14px;
+    text-align: right;
+    font-weight: 300;
 }
 
 
