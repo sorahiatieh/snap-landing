@@ -32,6 +32,7 @@ font-family:  IRANSans;
     left: 0;
     right: 0;
     background-color: var(--bg-white);
+    z-index: 100;
 }
 
 .header_container{
