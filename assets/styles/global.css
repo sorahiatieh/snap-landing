@@ -112,6 +112,12 @@ input::placeholder{
 }
 
 .btn--primary{
+    background-color: var(--primary-color);
+    color: var(--bg-white);
+    font-weight: 500;
+}
+
+.btn--secondary{
     background-color: var(--bg-white);
     color: var(--primary-color);
     font-weight: 500;
@@ -120,6 +126,11 @@ input::placeholder{
 .btn--primary::after{
     background-color: var(--ripple-color);
 }
+
+.btn--secondary::after{
+    background-color: var(--ripple-color);
+}
+
 
 .btn--outline{
     border: 1px solid var(--border-color);

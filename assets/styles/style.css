@@ -434,7 +434,7 @@ main{
    width: 100%;
    max-width: var(--size-xl);
    margin: 0 auto;
-   
+   gap: 10px;
 }
 
 @media (min-width:578px){
@@ -480,9 +480,41 @@ main{
 }
 
 
+/* Perks */
+.perks{
+    display: flex;
+    flex-direction: column;
+   padding: 20px;
+    background-color: var(--bg-main-color);
+    gap: 28px;
+}
 
+@media (min-width:578px) {
+    .perks{
+        justify-content: center;
+        align-items: center;
+    }
+}
 
+.perks__headline{
+    margin: 0;
+    font-size: 32px;
+}
 
+.perks__subline{
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+}
+/* cta= call to action */
+.perks__cta{ 
+    width: 200px;
+    margin: 0 auto;
+}
+
+.perks__video video{
+    width: 100%;
+}
 
 
 
