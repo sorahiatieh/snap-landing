@@ -435,6 +435,7 @@ main{
    width: 100%;
    max-width: var(--size-xl);
    margin: 0 auto;
+   margin-top: 0;
    gap: 10px;
 }
 
