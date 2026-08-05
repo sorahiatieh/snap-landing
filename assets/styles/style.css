@@ -10,6 +10,8 @@ font-family:  IRANSans;
 /* Variables */
 :root{
     --primary-color: #21aa58;
+    --text-color:#252a3c;
+    --info-color:#686c79;
     --border-color: #f7f7f7;
     --bg-white:#fff;
     --bg-main-color: #eeefff;
@@ -116,7 +118,7 @@ font-family:  IRANSans;
 
     .header__menu__nav .header__menu__nav__items .header__menu__nav__items__link {
         font-size: 16px;
-        font-weight: 300;
+        font-weight: 400;
     }
 
     .header__menu__nav__items__icon{
@@ -182,11 +184,15 @@ main{
     height: 80vh;
 }
 
+/* @media (min-width:587px){
+    .hero{
+        max-width: 1300px;
+    }
+} */
+
 .hero__info{
    flex: 1;
    height: 100%;
-   background-color: var(--primary-color);
-   color: var(--bg-main-color); 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -200,8 +206,20 @@ main{
     gap: 40px;
 }
 
+.hero__info__inner h1{
+    color: var(--text-color);
+}
+
+.hero__info__inner p{
+    color: var(--info-color);
+}
+
+.hero__info__cta{
+    display: flex;
+    justify-content: center;
+}
 .hero__image{
-   flex: 0;
+   flex: 1;
     height: 100%;
 }
 
@@ -217,7 +235,7 @@ main{
 
     .hero__image{
         flex: 1;
-        background: url("../images/intro.jpg") center center no-repeat;
+        background: url("../images/newheroimage.png") center center no-repeat;
         background-size: cover;
     }
      
@@ -227,7 +245,7 @@ main{
     }
 
     .hero__info__inner h1{
-        font-size: 36px;
+        font-size: 32px;
         font-weight: 700;
     }
     

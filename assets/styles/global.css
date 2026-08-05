@@ -118,6 +118,7 @@ input::placeholder{
 }
 
 .btn--secondary{
+    border: 1px solid var(--primary-color);
     background-color: var(--bg-white);
     color: var(--primary-color);
     font-weight: 500;
@@ -134,7 +135,7 @@ input::placeholder{
 
 .btn--outline{
     border: 1px solid var(--border-color);
-    color: var(--bg-white);
+    /* color: var(--bg-white); */
     font-weight: 500;
 }
 
