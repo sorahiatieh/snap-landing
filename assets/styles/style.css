@@ -182,6 +182,7 @@ main{
 .hero{
     display: flex;
     height: 80vh;
+    flex-direction: column;
 }
 
 /* @media (min-width:587px){
@@ -192,6 +193,7 @@ main{
 
 .hero__info{
    flex: 1;
+   order: 2;
    height: 100%;
     display: flex;
     justify-content: center;
@@ -217,26 +219,26 @@ main{
 .hero__info__cta{
     display: flex;
     justify-content: center;
+    gap: 20px;
 }
+
 .hero__image{
    flex: 1;
+   order: 1;
     height: 100%;
+    background: url("../images/newheroimage.png") center center no-repeat;
+    background-size: cover;
 }
 
 @media (min-width:992px) {
     .hero{
         height: 60vh;
+
     }
 
     .hero__info{
         padding: 0;
         padding-left: 80px;
-    }
-
-    .hero__image{
-        flex: 1;
-        background: url("../images/newheroimage.png") center center no-repeat;
-        background-size: cover;
     }
      
     .hero__info__inner{
@@ -254,6 +256,21 @@ main{
     }
 }
 
+@media (min-width:578px) {
+    .hero{
+        flex-direction: row;
+    }
+    .hero__info{
+        order: 1;
+    }
+    .hero__info__cta btn{
+       width: 200px;
+    }
+
+    .hero__info__cta{
+        justify-content: flex-start;
+    }
+}
 .hero__info__form{
     display: flex;
     gap: 20px;

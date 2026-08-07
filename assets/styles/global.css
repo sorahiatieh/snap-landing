@@ -151,6 +151,17 @@ section h3{
 
 @media (min-width:578px) {
     section h3{
-        font-size: 32px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #252a3c;
+        text-align: right;
     }
+}
+
+.w-215{
+    width: 215px;
+}
+
+.w-138{
+    width: 138px;
 }
