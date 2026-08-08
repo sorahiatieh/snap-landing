@@ -225,10 +225,14 @@ main{
 .hero__image{
    flex: 1;
    order: 1;
+   width: 200px;
     height: 100%;
+    margin-right: 130px;
     background: url("../images/newheroimage.png") center center no-repeat;
     background-size: cover;
 }
+
+
 
 @media (min-width:992px) {
     .hero{
