@@ -23,6 +23,7 @@ font-family:  IRANSans;
     --size-md: 768px;
     --size-lg: 992px;
     --size-xl: 1200px;
+    --shadow-box: 0px 3px 4px #6164750f, 0px 3px 3px #6164750a, 0px 1px 8px #6164751f;
 }
 
 
@@ -606,8 +607,61 @@ main{
     justify-content: center;
 }
 
+/* Insurance */
+.insurance{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.insurance__box{
+    min-width: 350px;
+    max-width: 350px;
+    margin-right: 10px;
+}
+.insurance__box__shadow{
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow-box);
+    width: 460px;
+    height: 200px;
+}
 
+.insurance__box__image  img{
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
 
+.insurance__box__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.insurance__box__info__desc{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.insurance__box__info__desc-img{
+    width: 45px;
+    height: 45px;
+}
+
+.insurance__box__info__desc-img img{
+    width: 100%;
+}
+
+.insurance__box__info__desc-p{}
+
+.insurance__box__info__desc-p p{}
+
+.insurance__box__info__buy{}
 
 
 
