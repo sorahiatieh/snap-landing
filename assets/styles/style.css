@@ -247,17 +247,18 @@ main{
     }
      
     .hero__info__inner{
-        margin-right: 150px;
+        /* margin-right: 150px; */
         justify-content: space-between;
     }
 
     .hero__info__inner h1{
-        font-size: 32px;
+        font-size: 29px;
         font-weight: 700;
+        line-height: 140%;
     }
     
     .hero__info__inner p{
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 
@@ -607,61 +608,97 @@ main{
     justify-content: center;
 }
 
-/* Insurance */
-.insurance{
+/*  Insurance  & credit__service & Comfortable travel  */
+.insurance ,
+.credit__service,
+.travel{
     display: flex;
     justify-content: space-between;
     gap: 15px;
     flex-wrap: wrap;
 }
-.insurance__box{
+.insurance__box,
+.credit__service__box,
+.travel__box{
     min-width: 350px;
     max-width: 350px;
     margin-right: 10px;
 }
-.insurance__box__shadow{
+
+
+
+.insurance__box__shadow,
+.credit__service__box__shadow,
+.travel__box__shadow{
     display: flex;
     flex-direction: column;
     box-shadow: var(--shadow-box);
-    width: 460px;
-    height: 200px;
+    width: 450px;
+    height: 185px;
 }
 
-.insurance__box__image  img{
-    border-radius: 8px;
+@media (min-width:578px) {
+    .insurance__box__shadow,
+    .credit__service__box__shadow,
+    .travel__box__shadow{
+        width: 405px;
+    }
+}
+
+.insurance__box__image  img,
+.credit__service__box__image img,
+.travel__box__image img{
+    border-radius: 8px 8px 0 0;
     overflow: hidden;
     width: 100%;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
+    -webkit-border-radius: 8px 8px 0 0;
+    -moz-border-radius: 8px 8px 0 0;
+    -ms-border-radius: 8px 8px 0 0;
+    -o-border-radius: 8px 8px 0 0;
 }
 
-.insurance__box__info{
+.insurance__box__info,
+.credit__service__box__info,
+.travel__box__info{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
-.insurance__box__info__desc{
+.insurance__box__info__desc,
+.credit__service__box__info__desc,
+.travel__box__info__desc{
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-.insurance__box__info__desc-img{
+.insurance__box__info__desc-img,
+.credit__service__box__info__desc-img,
+.travel__box__info__desc-img{
     width: 45px;
     height: 45px;
 }
 
-.insurance__box__info__desc-img img{
+.insurance__box__info__desc-img img,
+.credit__service__box__info__desc-img img ,
+.travel__box__info__desc-img{
     width: 100%;
 }
 
-.insurance__box__info__desc-p{}
+.insurance__box__info__desc-p,
+.credit__service__box__info__desc-p,
+.travel__box__info__desc-p{}
 
-.insurance__box__info__desc-p p{}
+.insurance__box__info__desc-p p,
+.credit__service__box__info__desc-p p,
+.travel__box__info__desc-p p{}
 
-.insurance__box__info__buy{}
+.insurance__box__info__buy,
+.credit__service__box__info__buy,
+.travel__box__info__buy{}
+
+
+
 
 
 

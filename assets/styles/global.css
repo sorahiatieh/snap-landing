@@ -45,7 +45,7 @@ input::placeholder{
     background-color: transparent;
     border: none;
     cursor: pointer;
-    padding: 12px 20px;
+    padding: 10px 20px;
     border-radius: 10px;
     font-size: 16px;
     font-weight: 300;
@@ -177,4 +177,10 @@ section p{
 
 .w-138{
     width: 138px;
+}
+
+.title-section{
+    font-size: 20px;
+    margin: 40px 0;
+    font-weight: 500;
 }
