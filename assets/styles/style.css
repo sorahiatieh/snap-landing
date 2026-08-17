@@ -226,7 +226,7 @@ main{
 .hero__image{
    flex: 1;
    order: 1;
-   width: 200px;
+   width: 198px;
     height: 100%;
     margin-right: 130px;
     background: url("../images/newheroimage.png") center center no-repeat;
@@ -634,7 +634,7 @@ main{
     flex-direction: column;
     box-shadow: var(--shadow-box);
     width: 450px;
-    height: 185px;
+    height: 200px;
 }
 
 @media (min-width:578px) {
@@ -661,8 +661,9 @@ main{
 .credit__service__box__info,
 .travel__box__info{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    margin: 0 10px;
 }
 
 .insurance__box__info__desc,
@@ -675,13 +676,13 @@ main{
 .insurance__box__info__desc-img,
 .credit__service__box__info__desc-img,
 .travel__box__info__desc-img{
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
 }
 
 .insurance__box__info__desc-img img,
 .credit__service__box__info__desc-img img ,
-.travel__box__info__desc-img{
+.travel__box__info__desc-img img{
     width: 100%;
 }
 
@@ -697,7 +698,30 @@ main{
 .credit__service__box__info__buy,
 .travel__box__info__buy{}
 
+/* Weblog */
 
+.weblog{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.weblog__box{
+    display: flex;
+    flex-direction: column;
+}
+
+.weblog__box__image{
+    width: 450px;
+    height: 240px;
+}
+
+.weblog__box__image img{
+    width: 100%;
+}
+
+.weblog__box__info{
+
+}
 
 
 
