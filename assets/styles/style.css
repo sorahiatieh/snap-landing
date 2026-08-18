@@ -180,6 +180,8 @@ main{
     
 }
 
+/* Hero */
+
 .hero{
     display: flex;
     height: 80vh;
@@ -229,11 +231,13 @@ main{
    width: 198px;
     height: 100%;
     margin-right: 130px;
-    background: url("../images/newheroimage.png") center center no-repeat;
-    background-size: cover;
+    /* background: url("../images/newheroimage.png") center center no-repeat; */
+    /* background-size: cover; */
 }
 
-
+.hero__image img{
+    width: 100%;
+}
 
 @media (min-width:992px) {
     .hero{
@@ -265,6 +269,8 @@ main{
 @media (min-width:578px) {
     .hero{
         flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
     .hero__info{
         order: 1;
@@ -277,6 +283,7 @@ main{
         justify-content: flex-start;
     }
 }
+
 .hero__info__form{
     display: flex;
     gap: 20px;
@@ -701,8 +708,9 @@ main{
 /* Weblog */
 
 .weblog{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
 }
 
 .weblog__box{
@@ -717,13 +725,21 @@ main{
 
 .weblog__box__image img{
     width: 100%;
+    border-radius:8px;
 }
 
-.weblog__box__info{
-
+.weblog__box__info h2{
+    font-weight: 500;
+    color: #252a3c;
+    text-align: right;
+    padding-top: 8px ;
+    padding-bottom: 8px;
 }
 
-
+.weblog__box__info p{
+    color: var(--info-color);
+    font-weight: 400;
+}
 
 
 

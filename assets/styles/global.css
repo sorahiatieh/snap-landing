@@ -158,6 +158,7 @@ section h3{
 section p{
     padding-right: 25px;
 }
+
 @media (min-width:578px) {
     section h2{
         margin-top: 30px;
