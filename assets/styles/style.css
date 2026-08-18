@@ -726,6 +726,7 @@ main{
 .weblog__box__image img{
     width: 100%;
     border-radius:8px;
+    aspect-ratio: auto;
 }
 
 .weblog__box__info h2{
