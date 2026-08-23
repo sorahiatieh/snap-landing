@@ -235,6 +235,17 @@ main{
     /* background-size: cover; */
 }
 
+.hero__icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-btn svg{
+    width: 24px;
+    height: 24px;
+}
+
 .hero__image img{
     width: 100%;
 }
@@ -558,7 +569,7 @@ main{
 }
 /* cta= call to action */
 .perks__cta{ 
-    width: 157px;
+    width: 167px;
     margin: 0 auto;
 }
 
