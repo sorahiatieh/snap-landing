@@ -12,3 +12,5 @@
             autoplayHoverPause: true
         });
     });
+
+    
