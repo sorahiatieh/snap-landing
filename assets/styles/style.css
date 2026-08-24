@@ -736,8 +736,11 @@ main{
 
 .weblog__box__image img{
     width: 100%;
+    height: 240px;
     border-radius:8px;
     aspect-ratio: auto;
+    object-position: center;
+    object-fit: cover;
 }
 
 .weblog__box__info h2{
